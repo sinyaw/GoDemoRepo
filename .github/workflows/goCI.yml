@@ -34,3 +34,14 @@ jobs:
         ls
         cat calc.go
         
+    - name: Checkout private repo
+      uses: actions/checkout@v2
+      with:
+        repository: sinyaw/GoDemoRepo
+        path: remoteRepo
+        token: ${{secret.SY_TOKEN}}
+    
+    - name: check files
+      run:
+        ls
+        
