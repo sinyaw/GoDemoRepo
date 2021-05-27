@@ -53,5 +53,14 @@ jobs:
       run: |
         go get github.com/franela/goblin
         go get github.com/stretchr/testify/assert
-        go test -v
+        go test -v  | go2xunit > report.xml
+        go get github.com/tebeka/go2xunit
+        ls
+        
+    - name: Publish Unit Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v1
+      if: alwyas()
+      with:
+        files: report.xml
+
         
