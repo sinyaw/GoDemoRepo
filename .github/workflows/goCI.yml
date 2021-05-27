@@ -39,7 +39,7 @@ jobs:
       with:
         repository: sinyaw/GoDemoRepo
         path: remoteRepo
-        token: ${{secret.SY_TOKEN}}
+        token: ${{secrets.SY_TOKEN}}
     
     - name: check files
       run:
