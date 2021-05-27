@@ -44,4 +44,7 @@ jobs:
     - name: check files
       run:
         ls
+        cd remoteRepo
+        ls
+        cd ..
         
