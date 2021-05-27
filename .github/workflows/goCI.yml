@@ -49,10 +49,6 @@ jobs:
         cat myText.txt
         cd ..
         
-
-       # go get github.com/stretchr/testify/assert
-       # go test -v  | go2xunit > report.xml
-
     - name: Install dependencies
       run: |
         go get github.com/franela/goblin
