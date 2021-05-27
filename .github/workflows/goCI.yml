@@ -42,7 +42,7 @@ jobs:
         token: ${{secrets.SY_TOKEN}}
     
     - name: check files
-      run:
+      run: |
         ls
         cd remoteRepo
         ls
