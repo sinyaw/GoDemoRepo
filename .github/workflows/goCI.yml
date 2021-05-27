@@ -27,7 +27,7 @@ jobs:
         
         
     - name: Checkout my codes
-      uses: action/checkout@v2
+      uses: actions/checkout@v2
       
     - name: Checkout my codes
       run: ls
